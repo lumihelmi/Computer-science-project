@@ -1,6 +1,34 @@
 Target assessment level of this work is 2.
+
 Specification:
-What does the program do?
+
 The program
 1. Asks for a random number from 1 to 10.
-2. Reads the user's input and answers how common that number is as an answer to the question according to statistics.
+2. Reads the user's input and answers how commonly that number is given as an answer to the question according to statistics.
+3. Asks the user to guess which colour I'm thinking of.
+4. Reads the user's input and lets the user try again until they guess the correct colour.
+
+Data format
+The input data is read from the user. The first one is an integer and second one is in String format.
+
+Correctness and exception handling: 
+
+Typical test case
+When the program is run with user input (1, green, blue), this is the output:
+
+Let's explore some probabilities.
+Pick a random number from 1 to 10: 
+1
+Surprisingly, this is an uncommon answer (only ~3.4% of people pick it)
+Now, try to guess which colour I'm thinking of. (Don't capitalize)
+green
+Good try. Guess again :D
+blue
+You're right, congratulations! This is the most common favourite colour.
+
+Exception handling
+The following are all the possible exceptions/special cases and the way they are handled.
+- java.util.InputMismatchException if user inputs a double or String instead of int to the first question (reported to user, program exits)
+- Number is not within given range in the first question. (output: "Number is not within the range 1-10. Did you know that 0.5% of people answer zero when asked this question?"
+- 
+
