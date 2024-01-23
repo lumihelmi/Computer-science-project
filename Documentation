@@ -1,0 +1,6 @@
+Target assessment level of this work is 2.
+Specification:
+What does the program do?
+The program
+1. Asks for a random number from 1 to 10.
+2. Reads the user's input and answers how common that number is as an answer to the question according to statistics.
