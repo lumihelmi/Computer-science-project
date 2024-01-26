@@ -9,7 +9,7 @@ The program
 4. Reads the user's input and lets the user try again until they guess the correct colour.
 
 Data format
-The input data is read from the user. The first one is an integer and second one is in String format.
+The input data is read from the user. int userInput is a single integer between 1-10 and String colour is a single word.
 
 Correctness and exception handling: 
 
@@ -28,7 +28,7 @@ You're right, congratulations! This is the most common favourite colour.
 
 Exception handling
 The following are all the possible exceptions/special cases and the way they are handled.
-- java.util.InputMismatchException if user inputs a double or String instead of int to the first question (reported to user, program exits)
+- java.util.InputMismatchException if user inputs a non-integer answer to the first question (reported to user, program exits)
 - Number is not within given range in the first question. (output: "Number is not within the range 1-10. Did you know that 0.5% of people answer zero when asked this question?"
-- 
+- Other errors (reported to user, program exits)
 
